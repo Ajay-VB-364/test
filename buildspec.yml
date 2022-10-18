@@ -17,5 +17,8 @@ phases:
     commands:
       - echo Pushing to ECR
       - docker push 369435385236.dkr.ecr.ap-south-1.amazonaws.com/community-app:latest
+      - printf '[{"name":"community-app","imageUri":"369435385236.dkr.ecr.ap-south-1.amazonaws.com/community-app:latest"}]' > imagedefinitions.json
 
-
+artifacts:
+  files:
+    - imagedefinitions.json

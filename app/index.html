@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <link rel="icon" type="image/png" href="./images/favicon.ico"/>
-    <title>App</title>
+    <title>{{ 'label.heading.mifosxclient' | translate }}</title>
     <style>[data-ng-cloak] {
         display: none !important;
     }</style>
@@ -127,7 +127,7 @@
 
                     <div class="row" ng-show="twoFactorRequired && !otpRequested">
                             <div class="col-sm-4 col-sm-offset-4">
-                                <h4>hi{{'label.heading.twofactor' | translate}}</h4>
+                                <h4>{{'label.heading.twofactor' | translate}}</h4>
                                 <hr>
 
                                 <p>{{'label.otp.delivery.info' | translate}}</p>
